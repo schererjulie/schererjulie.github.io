@@ -5,82 +5,67 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="navbar.css">
+    <link rel="stylesheet" href="default-format.css">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+        
+    <div class="navbar">
+        <div class="navpages">
+            <a href="index.html">Home</a>
+            <a href="../learn-more/index.html">Learn More</a>
+            <a href="../blog/index.html">Blog</a>
+        </div>
+        <div class="social-icons">
+            <a href="https://www.linkedin.com/in/julieann-scherer/" target="_blank"><img src="../images/linkedin-logo.png" alt="LinkedIn Logo" class="logo-img"></a>
+            <a href="https://github.com/schererjulie" target="_blank"><img src="../images/github-logo.png" alt="Github Logo" class="logo-img"></a>
+            <a href="mailto: schererjulie96@gmail.com" target="_blank"><img src="../images/gmail-logo.png" alt="Gmail Logo" class="logo-img"></a>
+        </div>
+    </div>
+    
+    <!-- ************************************************ BEGIN HERE ************************************************ -->
     <div class="container">
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-            <div class="container-fluid">
-              <a class="navbar-brand" href="#">Home</a>
-              <a class="navbar-brand" href="#">Learn More</a>
-              <a class="navbar-brand" href="#">Contact Me</a>
-            </div>
-        </nav>
 
-        <div class="social">
-            <div class="linkedin">
-                <p><a href="https://www.linkedin.com/in/julieann-scherer/" target="_blank"><img src="images/linkedin-logo.png" alt="LinkedIn Logo" class="logo-img"></a>linkedin.com/schererjulie</p>
-            </div>
-            <div class="github">
-                <p><a href="https://github.com/schererjulie" target="_blank"><img src="images/github-logo.png" alt="Github Logo" class="logo-img"></a>github.com/schererjulie</p>
-            </div>
-            <div class="gmail">
-                <p><a href="mailto: schererjulie96@gmail.com" target="_blank"><img src="images/gmail-logo.png" alt="Gmail Logo" class="logo-img"></a>schererjulie96@gmail.com</p>
-            </div>
-        </div>
+        <!-------- ABOUT ME -------->
+        <div class="intro-box">
+            <h2>Hi, I'm Julie! &#128075 Welcome to my site!</h2>
+            <p class="selfie"><img src="../images/computer_geek.jpg" class="selfie" style="max-width:280px;"><br>I began working on this creation when I joined the coding temple bootcamp July 11, 2022. I will continue to develop this site as I learn more web dev tricks over the next several weeks and in the months and years to come. Eventually, this will be a place for people to get to know me on a more personal level and easily and quickly see my work, but right now, it's just a learning experience for me and the beginning of a whole new endeavor. Thanks for stopping by. Feel free to talk a look around!</p>
+        </div>    
 
-        <div class="contact">
-            <h1>Contact me</h1>
-                <!--Contact form-->
-                <!--  https://www.w3schools.com/html/html_form_elements.asp -->
-                <form action="#" id="contact">
-                    <label for="name">Name</label>
-                    <input type="text" class="textbox" placeholder="your name">
-                    <br>
-                    <label for="body">Message</label>
-                    <textarea class="textbox" placeholder="your message"></textarea> <!-- use style attribute so the width of the field adjusts with the size of the page -->
-                    <input type="button" value="Submit"> <!-- ref: https://www.w3schools.com/html/html_forms_attributes.asp, https://www.w3schools.com/php/default.asp -->
-                </form>
-        </div>
-
-        <div class="leftbox">
-            <h1>Hi, I'm Julie! &#128075</h1>
+        <div class="city-box">
+            <h1>Chicago Livin'</h1>
             <p>I was born and raised in central Illinois, though I am a Chicagoan at heart. I moved to the city in 2018 and have loved living here ever since. I love going to Cubs games and trying all the amazing food here.</p>
-            <h2>Chicago Livin'</h2>
-            <details class="chi-flag">
-                <summary>Pride Baby</summary>
-                <ul>
-                    <li><img src="images/chi_flag.png" class="chi-pic" style="max-height:300px;"></li>
-                </ul>
-            </details>
-            <details class="cubs">
-                <summary>Go Cubs Go</summary>
-                <ul>
-                    <li><img src="images/cubs_stadium.png" class="chi-pic" style="max-height:300px;"></li>
-                </ul>
-            </details>
+            <div class="chi-flag">
+                <h2>Pride Baby</h2>
+                    <img src="../images/chi_flag.png" class="chi-pic" style="max-height:300px;">
+            </div>
+            <br>
+            <div class="cubs">
+                <h2>Go Cubs Go</h2>
+                    <img src="../images/cubs_stadium.png" class="chi-pic" style="max-height:300px;">
+            </div>
         </div>
 
-        <div class="rightbox">
-            <h2>Meet Kaya and Oskee!</h2>
+        <!-------- PETS -------->
+        <div class="pets-box">
+            <h1>Meet Kaya and Oskee!</h1>
             <p>Meet Kaya my german-shepherd husky and Oskee my tubby tabby, named after the U of I chant "Oskee Wow Wow."</p>
-            <details class="pets">
-                <summary>Kaya</summary>
-                <ul>
-                    <li><img src="images/kaya_little.jpg" class="pets" style="max-width:200px;"></li>
-                    <li><img src="images/kaya_ponys.JPG" class="pets" style="max-width:200px;"></li>
-                </ul>
-            </details>
-            <details class="pets">
-                <summary>Oskee Meow Meow</summary>
-                <ul>
-                    <li><img src="images/oskee.JPG" class="pets" style="max-width:280px;"></li>
-                    <li><img src="images/oskee_nametag.jpg" class="pets" style="max-width:280px;"></li>
-                </ul>
-            </details>
+            <div class="kaya">
+                <h2>Kaya</h2>
+                    <img src="../images/kaya_little.jpg" class="pets" style="max-width:200px;">
+                    <img src="../images/kaya_ponys.JPG" class="pets" style="max-width:200px;">
+            </div>
+            <br>
+            <div class="oskee">
+                <h2>Oskee Meow Meow</h2>
+                    <img src="../images/oskee.JPG" class="pets" style="max-width:280px;">
+                    <img src="../images/oskee_nametag.jpg" class="pets" style="max-width:280px;">
+            </div>
         </div>
         
-        <div class="hobbox">
+        <!-------- HOBBIES -------->
+        <div class="hobbies-box">
             <h1>hobbies</h1>
             <div class="hobbies">
                 <p class="hobby">Shows/concerts</p>
