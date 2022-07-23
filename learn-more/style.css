@@ -1,7 +1,10 @@
+body {
+    background-image: url("../images/treasure_map_background.png");
+}
+
 p {
     font-family:Verdana, Geneva, Tahoma, sans-serif;
     text-align: justify;
-
 }
 
 .container {  
@@ -22,9 +25,13 @@ div[class$='box'] {
     border-style: solid;
     border-width: thin;
     border-color: grey;
-    background-color: rgb(114, 113, 113); /*rgba(36, 33, 33, 0.85);*/
-    /* background-color: rgb(39,39,255,0.8); */
+    background-color: rgb(114, 113, 113, 0.7);
     padding: 10px;
+}
+
+div[class$='box']:hover {
+    background-color: rgba(12, 143, 199, 0.9);
+
 }
 
 .collegepic {
